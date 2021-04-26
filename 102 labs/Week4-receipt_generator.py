@@ -1,0 +1,36 @@
+# Madeleine Nightengale-Luhan
+# CSCI 102 - Section A
+# Week 4 - Lab A - Receipt Generator
+# References: No one
+# Time: 30 minutes
+
+company_name = input('Enter company name: ')
+company_city = input('Enter company city/state: ')
+cashier_name = input('Enter cashier name: ')
+purchased_item_1n = input('Purchased item 1 name: ')
+purchased_item_1p = float(input('Purchased item 1 price: '))
+purchased_item_2n = input('Purchased item 2 name: ')
+purchased_item_2p = float(input('Purchased item 2 price: '))
+purchased_item_3n = input('Purchased item 3 name: ')
+purchased_item_3p = float(input('Purchased item 3 price: '))
+ending_message = input('Enter your favorite ending message: ')
+total = (purchased_item_1p + purchased_item_2p + purchased_item_3p)
+print('        RECEIPT GENERATOR    ')
+print('===================================')
+print('    ', company_name)
+print('    ', company_city)
+print('***********************************')
+print('    Your cashier was:', cashier_name)
+print('    Welcome Valued Customer')
+print('***********************************')
+print('     Item Name       Item Price')
+print('       ')
+print(f"    {purchased_item_1n}        ${purchased_item_1p}")
+print(f"    {purchased_item_2n}        ${purchased_item_2p}")
+print(f"    {purchased_item_3n}        ${purchased_item_3p}")
+print('     ')
+print('***********************************')
+print('    Total Cost of Order: ', round(total, 2))
+print('***********************************')
+print('    ', ending_message)
+print('===================================')
