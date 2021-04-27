@@ -61,6 +61,24 @@ def not_in(list_a, list_b):
         if num not in list_b:
             array.append(num)
     return array
+# is_prime
+def is_prime(value):
+    import math
+    if value > 0 and value < 3:
+        if value == 1:
+            prime_num = 'false'
+            print('False')
+        if value == 2:
+            prime_num = 'true'
+            print('True')
+    else:
+        prime_num = 'true'
+        num = math.floor(math.sqrt(value))
+        for i in range(2, num + 1):
+            if num % value == 0:
+                print('False')
+            if num:
+                print('True')
 
     
 
