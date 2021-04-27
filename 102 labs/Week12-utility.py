@@ -28,6 +28,14 @@ def find_word_count(my_list, search_word):
             if search_word == found:
                 num += 1
     return num
+#score_finder function
+def score_finder(player_names, player_scores, player_to_find):
+    for i in range(len(player_names)):
+        if (player_names[i].lower() == player_to_find.lower()):
+            print(f"OUTPUT {player_names[i]} got a score of {player_scores[i]}")
+            return
+    print('OUTPUT player not found')
+    
 
     
 
