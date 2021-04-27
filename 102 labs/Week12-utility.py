@@ -54,6 +54,13 @@ def intersect(list_a, list_b):
             if num == var:
                 array.append(num)
     return array
+#not_in function
+def not_in(list_a, list_b):
+    array = []
+    for num in list_a:
+        if num not in list_b:
+            array.append(num)
+    return array
 
     
 
