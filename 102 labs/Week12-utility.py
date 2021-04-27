@@ -35,7 +35,7 @@ def score_finder(player_names, player_scores, player_to_find):
             print(f"OUTPUT {player_names[i]} got a score of {player_scores[i]}")
             return
     print('OUTPUT player not found')
-# check union function
+#union function
 def union(list_a, list_b):
     array = []
     for character in list_a:
@@ -46,7 +46,14 @@ def union(list_a, list_b):
             if character not in str(words):
                 array.append(words)
     return array
-
+#intersect function
+def intersect(list_a, list_b):
+    array = []
+    for num in list_a:
+        for var in list_b:
+            if num == var:
+                array.append(num)
+    return array
 
     
 
