@@ -6,9 +6,9 @@
 
 # load_file function
 def load_file(file_name):
-    with open(file_name, 'r') as f:
-        read_file = f.read().splitlines()
-        output = []
-        for line in read_file:
-            output.append(line)
-    return output
+    with open(file_name) as file:
+        file_read = file.read()
+        for line in file_read:
+            lines = line.strip()
+    return lines
+
