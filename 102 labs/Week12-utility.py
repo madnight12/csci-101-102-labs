@@ -19,5 +19,15 @@ def update_string(some_string_1, some_string_2, index):
         print('OUTPUT', end = '')
         for var in range(len(some_string_1)):
             print(some_string_1[var], end = '')
+# find_word_count function
+def find_word_count(my_list, search_word):
+    num = 0
+    for find in my_list:
+        word = mylist.split('')
+        for found in word:
+            if search_word == found:
+                num += 1
+    return num
+
     
 
