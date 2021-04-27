@@ -11,4 +11,13 @@ def load_file(file_name):
         for line in file_read:
             lines = line.strip()
     return lines
+# update_string funcntion
+def update_string(some_string_1, some_string_2, index):
+    some_string_1 = []
+    for var in range(len(some_string_1)):
+        some_string_1[index] = some_string_2
+        print('OUTPUT', end = '')
+        for var in range(len(some_string_1)):
+            print(some_string_1[var], end = '')
+    
 
